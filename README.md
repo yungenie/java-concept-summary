@@ -1,7 +1,2 @@
-*.java linguist-detectable=false
+# :hotsprings: 자바 개념 정리
 
-
-
-# java-concept-summary
-
-:hotsprings: 자바 개념 정리
