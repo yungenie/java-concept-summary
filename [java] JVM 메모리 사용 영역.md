@@ -2,6 +2,7 @@
 </br>
 
 ## JVM 메모리 구조
+<img src="https://user-images.githubusercontent.com/28051638/122005124-37fb6700-cdf0-11eb-9c87-254e54486d3e.jpg"  width="100%" alt="jvm"></img></br></br>
 
 ### 메소드(Method) & 스태틱(Static) 영역
 > \- JVM이 구동될 때 생성되며 모든 스레드가 공유하는 영역     
