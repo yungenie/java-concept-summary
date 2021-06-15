@@ -15,6 +15,16 @@
   \- 스레드가 시작될때 할당되며 메서드가 호출되면, 메서드의 매개변수와 지역변수가 저장되는 영역이다.  
 </br>
 
+## JDK, JRE, JVM
+<img src="https://user-images.githubusercontent.com/28051638/122061351-621d4b00-ce29-11eb-8a80-03e57f242813.jpg" width="100%"></img>
+- 자바 애플리케이션을 개발하고 실행하기 위한 자바 플랫폼 3대 구성 요소입니다.
+- **자바 개발 도구 (JDK, Java Development Kit)**  
+  \- 자바 프로그램에 필요한 JVM, 라이브러리 API, 컴파일러 등 개발 도구가 포함된 소프트웨어 패키지  
+- **자바 실행 환경 (JRE, Java Runtime Environment)**  
+  \- 자바 프로그램 실행에 필요한 JVM, 라이브러리 API가 포함된 소프트웨어 패키지   
+</br>
+
+
 ## JVM
 - 자바 가상 기계 Java Virtual Machine
 - 바이트 코드 파일을 해당 운영체제에서 실행 가능한 기계어로 변역 후 실행할 수 있게 해주는 가상의 운영체제입니다.
