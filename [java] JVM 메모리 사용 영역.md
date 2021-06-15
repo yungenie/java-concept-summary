@@ -5,10 +5,13 @@
 - 자바 가상 기계 Java Virtual Machine
 - Java Program이 OS에 구애받지 않고 실행될 수 있게 해줌
 - 메모리 관리 기능(Garbage Collection)
+
 </br>
 
 ## JVM 메모리 구조
-<img src="https://user-images.githubusercontent.com/28051638/122005124-37fb6700-cdf0-11eb-9c87-254e54486d3e.jpg"  width="100%" alt="jvm"></img></br></br>
+<img src="https://user-images.githubusercontent.com/28051638/122005124-37fb6700-cdf0-11eb-9c87-254e54486d3e.jpg"  width="100%" alt="jvm"></img>
+- java.exe로 JVM이 시작되면 JVM은 운영체제에서 할당받은 메모리 영역(Runtime Data Area)을 다음 아래와 같이 세부 영역으로 구분하여 사용합니다.
+</br></br>
 
 ### 메소드(Method) & 스태틱(Static) 영역
 > \- JVM이 구동될 때 생성되며 모든 스레드가 공유하는 영역     
