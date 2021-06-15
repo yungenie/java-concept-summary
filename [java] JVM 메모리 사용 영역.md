@@ -1,6 +1,12 @@
 # JVM 메모리 사용 영역(Runtime Data Area)
 </br>
 
+## JVM
+- Java Virtual Machine
+- Java Program이 OS에 구애받지 않고 실행될 수 있게 해줌
+- 메모리 관리 기능(Garbage Collection)
+</br>
+
 ## JVM 메모리 구조
 <img src="https://user-images.githubusercontent.com/28051638/122005124-37fb6700-cdf0-11eb-9c87-254e54486d3e.jpg"  width="100%" alt="jvm"></img></br></br>
 
