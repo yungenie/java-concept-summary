@@ -2,7 +2,7 @@
 </br>
 
 ## JVM
-- Java Virtual Machine
+- 자바 가상 기계 Java Virtual Machine
 - Java Program이 OS에 구애받지 않고 실행될 수 있게 해줌
 - 메모리 관리 기능(Garbage Collection)
 </br>
