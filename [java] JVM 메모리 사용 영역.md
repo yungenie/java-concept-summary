@@ -13,7 +13,7 @@
 - java.exe로 JVM이 시작되면 JVM은 운영체제에서 할당받은 메모리 영역(Runtime Data Area)을 다음 아래와 같이 세부 영역으로 구분하여 사용합니다.
 </br></br>
 
-### 메소드(Method) & 스태틱(Static) 영역
+### 메소드(Method) 영역 (Static)
 > \- JVM이 구동될 때 생성되며 모든 스레드가 공유하는 영역     
 > \- JVM이 읽어들인 클래스, 인터페이스에 대한 런타임 풀 상수, 메소드와 필드, Static 변수, 메소드 변수, 생성자(Constructor)등 저장  
 >
