@@ -19,7 +19,7 @@ public class EscapeSplitTest {
         }
 
         // 정규식 표현으로 escape 문자열 자르기 (split 함수 사용)
-        // 만약 정해진 규칙을 escape 하려면 \ 를 앞에 붙이거나, \Q ... \E 로 감싸야 한다.
+        // 정해진 규칙을 escape 하려면 \ 를 앞에 붙이거나, \Q ... \E 로 감싸야 한다.
         str = str.replace(" ", "");
         String regExp = "\\Q||\\E";
         String[] result2 = str.split(regExp);
