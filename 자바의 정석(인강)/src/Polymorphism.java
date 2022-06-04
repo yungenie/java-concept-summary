@@ -10,12 +10,12 @@ public class Polymorphism {
         /**
          * 요약 : 조상과 자손의 상속관계
          * 1. 조상 타입의 참조변수로 자손/조상 타입의 자손객체를 가르킬 수 있다 (단, 자손의 멤버만 접근 불가)
-         * 2. 자손 타입의 참조변수로 조상 타입의 조상객체를 가르킬 수 없다. (에러, 허용안됨)
-         * 3. 자손 타입의 참조변수로 자손 타입의 조상객체를 가르킬 수 있다. (자손 및 조상 멤버 모두 접근 가능)
+         * 2. 자손 타입의 참조변수로 조상 타입의 조상객체를 가르킬 수 없다. (소스에러, 허용안됨)
+         * 3. 자손 타입의 참조변수로 자손 타입의 조상객체를 가르킬 수 없다. (소스에러안남, 실행시 오류남)
          *
          *
          * 정상 : Parent p = new Child(); //(Parent)new Child() 형변환 생략 가능
-         * 정상 : Child c = (Child)new Parent() //
+         * 불가 : Child c = (Child)new Parent() // 작성 오류안남, 컴파일 실행시 오류
          * 불가 : Child c = new Parent() // error, (Parent)new Parent(); 형변환 생략됨됨
         * * */
 
@@ -29,20 +29,21 @@ public class Polymorphism {
         c.stop();
 
         //// error, 위 인스턴스화 자손객체를 조상 타입으로 형변환 되었기 때문에 자손 고유의 멤버 접근 불가.(자신이 물려준 멤버만 접근 가능)
-        //c.water();
+        c.water();
 
         // 2.자손타입의 참조변수로 조상 타입의 조상객체를 가르킬 수 없다
         //// error, 자손타입의 참조변수가 조상객체를 가르키고 있어 자손 객체의 멤버를 접근 못함
-        //FireEngine f = new Car(); //(Car)new FireEngine(); 형변환 생략됨
+        FireEngine f = new Car(); //(Car)new FireEngine(); 형변환 생략됨
 
         // 3. 자손 타입의 참조변수로 자손 타입의 조상객체를 가르킬 수 있다. (자손 및 조상 멤버 모두 접근 가능)
-        //// not error, 조상객체가 자손타입으로 형변환하여 자손 타입의 참조변수는 조상 멤버, 자신의 멤버까지 접근 가능
-        FireEngine fc = (FireEngine) new Car();
-        fc.color = "red";
-        fc.door = 1;
-        fc.drive();
-        fc.stop();
-        fc.water();
+        //// error, 형변환 타입만 맞으면 컴파일은 속아서 오류안남 (단, 컴파일러가 실행시 오류 뱉음)
+        //// 조상객체가 자손타입으로 형변환가능하여 자손 타입의 참조변수는 조상 멤버, 자신의 멤버까지 접근 가능
+        FireEngine fc = (FireEngine) new Car(); // 형변환 실행 에러 java.lang.ClassCastException
+        fc.color = "red"; //컴파일 ok
+        fc.door = 1;    // 컴파일 ok
+        fc.drive();     // 컴파일 ok
+        fc.stop();      // 컴파일 ok
+        fc.water();     // 컴파일 ok
 
     }
 
