@@ -14,12 +14,15 @@ abstract public class Abstract {
     abstract void play();
     //abstract void AutoPlay();
     //abstract void play(){}; // error
+    public void musicPlay(){} // not error
+    public static void geniePlay(){} // not error
 
     public static void main(String[] args) {
         // 추상 클래스는 상속을 통해 완성해야 객체 생성 가능
         // 미완성 객체이므로 인스턴스 생성 불가
         //Abstract a = new Abstract(); // error
     }
+
 
 }
 
@@ -36,6 +39,7 @@ class Yolo extends Abstract {
     void stop() {
         System.out.println("잠시 쉬기");
     }
+
 }
 
 class Me {
