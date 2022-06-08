@@ -7,10 +7,14 @@
 abstract public class Abstract {
 
     /**
-     * 추상 메서드를 갖고 있는 클래스 (추상 클래스 abstract 제어자 필수)
+     * 추상 클래스 : 추상 메서드를 갖고 있는 클래스 (추상 클래스 abstract 제어자 필수)
      * 추상 클래스 용도 : 자손마다 다르게 구현될 것으로 예상되는 경우  추상 클래스 만듬
      * 추상 메서드 : 미완성 메서드. 몸통 블럭{} 없음
      * */
+
+    String str;
+    static int age = 1;
+
     abstract void play();
     //abstract void AutoPlay();
     //abstract void play(){}; // error
