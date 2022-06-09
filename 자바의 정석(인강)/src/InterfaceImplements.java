@@ -10,7 +10,7 @@ public class InterfaceImplements implements Space{ //public 이면 오류남. //
     /**
      * 인터페이스 구현
      * - 인터페이스에 정의된 추상 메서드를 모두 구현 하는 것
-     *
+     * - 인터페이스의 구현은 클래스를 통해 해야함
      * */
     @Override
     public void sky(String x, int y) {
@@ -37,7 +37,11 @@ abstract class Earth implements Space {
         System.out.println("밤하늘의 퍼얼~ 루이비통 루이비통");
     }
 
-    public abstract void star(int i); // 메서드 생략가능
+    /**
+     * 추상 메서드 생략가능.
+     * - 생략할 때 소스에 보이진 않지만 추상 메서드이기 때문에 클래스 앞에 abstract 키워드를 붙이는 것
+     * */
+    public abstract void star(int i);
 
 }
 
