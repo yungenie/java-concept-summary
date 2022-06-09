@@ -5,7 +5,7 @@
  * @since   JDK1.8
  */
 
-class InterfaceImplements implements Space{ //public 이면 오류남.
+public class InterfaceImplements implements Space{ //public 이면 오류남. // 에러 안남..
 
     /**
      * 인터페이스 구현
@@ -36,10 +36,13 @@ abstract class Earth implements Space {
         System.out.println("%s 행성");
         System.out.println("밤하늘의 퍼얼~ 루이비통 루이비통");
     }
+
+    public abstract void star(int i); // 메서드 생략가능
+
 }
 
 interface Space {
-    public abstract void sky(String x, int y);
-    void star(int i);
+    public abstract void sky(String x, int y); // public abstract 생략가능
+    public abstract void star(int i); //public abstract 생략가능
 
 }
