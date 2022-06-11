@@ -22,6 +22,12 @@ public class InterfaceImplements implements Space{ //public 이면 오류남. //
         String sing = "반짝 반짝 작은 별 ~";
         System.out.println(sing + "별 %d 개");
     }
+
+    @Override
+    public void rotating(Planet planet) {
+        System.out.println(planet.getSpeed() + "의 속도로 자전 중");
+    }
+
 }
 
 abstract class Earth implements Space {
@@ -49,4 +55,36 @@ interface Space {
     public abstract void sky(String x, int y); // public abstract 생략가능
     public abstract void star(int i); //public abstract 생략가능
 
+    // 인터페이스를 구현한 클래스만 매개변수로 가능
+    void rotating(Planet planet); //public abstract 생략가능
+
+}
+interface Planet {
+
+    int getSpeed();
+
+
+}
+class 화성 implements Planet {
+
+    @Override
+    public int getSpeed() {
+        int speed = 5;
+        return speed;
+    }
+}
+class 토성 implements Planet {
+
+    @Override
+    public int getSpeed() {
+        int speed = 15;
+        return speed;
+    }
+}
+class PlanetSpeed {
+    public static void main(String[] args) {
+        Planet 화성 = new 화성();
+        InterfaceImplements ii = new InterfaceImplements();
+        ii.rotating(화성);
+    }
 }
