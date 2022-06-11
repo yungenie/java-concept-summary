@@ -11,6 +11,9 @@ public class InterfaceImplements implements Space{ //public 이면 오류남. //
      * 인터페이스 구현
      * - 인터페이스에 정의된 추상 메서드를 모두 구현 하는 것
      * - 인터페이스의 구현은 클래스를 통해 해야함
+     *
+     * 인터페이스와 추상클래스의 차이점
+     * - 인터페이스는 클래스 변수를 가질 수 없다.
      * */
     @Override
     public void sky(String x, int y) {
