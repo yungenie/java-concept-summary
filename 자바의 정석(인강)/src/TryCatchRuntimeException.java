@@ -4,19 +4,23 @@
  * @author  Yunjin
  * @since   JDK1.8
  */
-
-public class TryCatchRuntimeException extends Hi{
+class TryCatchRuntimeException extends Hello{
     public static void main(String[] args) {
+        System.out.println("Hello");
+
         try {
-            Hi hi = (Hi) new TryCatchRuntimeException();
-        } catch (RuntimeException e){
+            TryCatchRuntimeException tryCatchRuntimeException = (TryCatchRuntimeException) new Hello();
+        } catch (RuntimeException e1){
             System.out.println("RuntimeException 발생!!");
-            e.printStackTrace();
+            //e1.printStackTrace();
+            //e1.getMessage();
+            System.out.println(e1.getMessage());
+            System.out.println(e1.getStackTrace());
         }
     }
 }
 
-class Hi {
+class Hello {
     void hi(){
         System.out.println("hii");
     }
