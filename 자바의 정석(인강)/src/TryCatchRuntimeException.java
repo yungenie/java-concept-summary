@@ -1,5 +1,5 @@
 /**
- * Try-Catch문 RuntimeException 예제
+ * try-catch RuntimeException 예제
  *
  * @author  Yunjin
  * @since   JDK1.8
