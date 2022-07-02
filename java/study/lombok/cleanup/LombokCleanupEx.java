@@ -11,6 +11,7 @@ import java.io.Closeable;
  * @since JDK1.8
  */
 
+// Closeable 인터페이스에서 close() 메소드 오버라이딩하여 구현한 클래스
 class OverrideClose implements Closeable {
 
     public OverrideClose() {
@@ -23,8 +24,8 @@ class OverrideClose implements Closeable {
     }
 }
 
+// CustomClose close() 메소드 커스텀 클래스
 class CustomClose {
-
     String type = "";
     public CustomClose(String type) {
         this.type = type;
@@ -55,6 +56,14 @@ public class LombokCleanupEx {
         @Cleanup() CustomClose cc = new CustomClose("cc");
         @Cleanup("closeup") CustomClose ccup = new CustomClose("ccup");
 
+        /*  Result
+        all OverrideClose()
+        call CustomClose() : cc
+        call CustomClose() : ccup
+        call closeup() : ccup
+        call close() : cc
+        call @Override close()
+        */
 
     }
 }
