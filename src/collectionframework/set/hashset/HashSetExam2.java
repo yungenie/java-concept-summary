@@ -19,7 +19,6 @@ import java.util.Set;
  * @see HashSet
  * @see Set
  * @see Iterable
- * @Date 20211007
  */
 public class HashSetExam2 {
 

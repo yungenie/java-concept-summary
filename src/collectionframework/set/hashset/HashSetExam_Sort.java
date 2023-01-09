@@ -18,7 +18,6 @@ import java.util.*;
  * @see List
  * @see LinkedList
  * @see Object
- * @Date 20230109
  */
 public class HashSetExam_Sort {
     public static void main(String[] args) {

@@ -14,7 +14,6 @@ import java.util.Set;
  * @see Set
  * @see Iterator
  * @see Object
- * @Date 20230109
  */
 public class HashSetExam_ObjectArr {
     public static void main(String[] args) {
