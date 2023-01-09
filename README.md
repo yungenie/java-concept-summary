@@ -1,9 +1,8 @@
+# java-concept-summary
 [![Since](https://img.shields.io/badge/since-2021.06.11-333333.svg?style=flat-square)]()
 [![author](https://img.shields.io/badge/author-geineeeee-0366d6.svg?style=flat-square)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-FFE400.svg?style=flat-square)](http://makeapullrequest.com)
 
-# 자바 학습 
-<br/> 
 
 
 ### ● 모두의 자바
