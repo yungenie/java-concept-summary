@@ -1,23 +1,18 @@
-package collectionframework.set.hashset;/*
- *
- *  Corder : YunGenie(yungenie8931@gmail.com)
- * 	Datetime : 2021.07.10 11:39:32
- * 	OS :  window10 x64 
- * 	Editor : Java Editor
- * 	Compiler : Javac 1.8.0_292
- * 	SourceEncording : UTF-8
- *  Ref : 
- *
- */
+package collectionframework.set.hashset;
 
-/*
+import java.util.*;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+/**
  * 예제) String 객체를 중복 없이 저장하는 HashSet
- * 
+ *
  * 설명 )
- *		Set 컬렉션은 인덱스로 객체를 검색해서 가져오는 메소드가 없습니다. 
+ *		Set 컬렉션은 인덱스로 객체를 검색해서 가져오는 메소드가 없습니다.
  * 		대신, 객체를 전체를 대상으로 한 번씩 반복해서 가져오는 반복자(iterator)를 제공합니다.
  * 		반복자는 Iterator 인터페이스를 구현한 객체
- * 
+ *
  * 		[iterator 인터페이스에 선언된 메소드]
  * 		_________________________________________________________________________
  * 		 리턴타입	|    메소드    |                        설명
@@ -27,12 +22,19 @@ package collectionframework.set.hashset;/*
  * 		   E    |  next()    | 컬렉션에서 하나의 객체를 가져옵니다.
  * 		_________________________________________________________________________
  * 		  void  |  remove()  | Set 컬렉션에서 객체를 제거합니다.
- * 		_________________________________________________________________________	
- * 	
- * */
+ * 		_________________________________________________________________________
+ *
+ *
+ * @author yunjin
+ * @see Collection
+ * @see HashSet
+ * @see Set
+ * @see Iterator
+ * @Date 20210710
+ */
 
 
-import java.util.*;
+
 
 public class HashSetExam1 {
 	

@@ -14,7 +14,7 @@ import java.util.Set;
  * 
  * <p> 순서를 유지하고 싶으면 LinkedHashSet 클래스 사용
  * 
- * @author YunJin
+ * @author yunjin
  * @see Collection
  * @see HashSet
  * @see Set
@@ -28,7 +28,7 @@ public class HashSetExam2 {
 		// 1. 객체 선언 new HashSet<>();
 		Set<String> set = new HashSet<String>();
 		
-		// 2. 데이터 삽입 set.add()
+		// 2. 데이터 삽입 add()
 		set.add("aspea");
 		set.add("카리나");
 		set.add("지젤");
