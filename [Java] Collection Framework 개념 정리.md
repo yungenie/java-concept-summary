@@ -325,19 +325,56 @@ _Assembled by yungenie (2023-01-01)_
 >>	→ 오름차순, 내림차순에 따라 자리 변동 
 >>	3. 1,2번 반복 (반복)            
 >>	- 정렬 방법은 똑같다. 단, 전략이 다르다. (정렬기준 등) 
-	
-	
-	
-## Set 인터페이스 - 순서 X, 중복 X
-
-                 Set
-        ↗        ↑
-    HashSet*   SortedSet
-                  ↑
-               TreeSet*
-               
-### 집합관련 메서드
-- addAll(합집합), containsAll(부분집합), removeAll(차집합), retainAll(교집합) 
+>
+>## Set 인터페이스 - 순서 X, 중복 X
+>
+>                 Set
+>        ↗         ↑
+>     HashSet*   SortedSet
+>                   ↑
+>                TreeSet*
+>  
+> 
+> #### 집합관련 메서드
+> - addAll(합집합), containsAll(부분집합), removeAll(차집합), retainAll(교집합)
+>
+> #### HashSet
+> - `순서를 유지하지 않고 중복을 허용하지 않음`
+> - `Set 인터페이스를 구현`한 대표적인 컬렉션 클래스
+> - `순서를 유지하려면, LinkedHashSet`클래스를 사용하면 된다.
+> 
+> #### TreeSet
+> - `범위 검색와 정렬에 유리한` 컬렉션 클래스
+> - ★HashSet보다 데이터 추가, 삭제에 시간 소요됨.
+>
+> #### 주요 메서드
+> - HashSet()
+> - HashSet(Collection c) 생성자
+> - HashSet(int initialCapacity) 초기용량
+> - HashSet(int initialCapacity, float loadFactor) 조건 0.8이면 80%차면 언제로 2배로 늘릴 것인지. (언제)
+> - 보통 컬렉션 클래스들은 공간이 부족하면 스스로 늘리지만, loadFactor 통해 설정할 수 있음
+> 
+> 
+> ##### 추가
+> - boolean add(Object o)
+> - boolean addAll(Collection c) 합집합
+> 
+> ##### 삭제
+> - boolean remove(Object o)
+> - boolean removeAll(Collection c) 교집합
+> - boolean retainAll(Collection c) 차집합
+> - void clear() 모두삭제
+> 
+> ##### 포함여부
+> - boolean contains(Object o)
+> - boolean containsAll(Collection c) Collection에 담긴 여러객체 모두 포함되어 있는 지
+> - Iterator iterator()
+> 
+> ##### 기타
+> - boolean isEmpty() 비어 있는 지 확인
+> - int size()
+> - Object[] toArray() 객체 배열로 반환
+> - Object[] toArray(Object[ ] a)
 
 
 ## Map 인터페이스 - 순서 X, 중복(키X, 값o)
