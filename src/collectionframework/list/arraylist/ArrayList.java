@@ -2,7 +2,7 @@ package collectionframework.list.arraylist;
 
 import java.util.List;
 /**
- * ArrayList 예제
+ * ArrayList 예제 테스트
  *
  * @author  Yunjin
  * @since   JDK1.8
