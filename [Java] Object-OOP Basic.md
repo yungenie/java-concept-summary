@@ -4,13 +4,10 @@ _Assembled by yungenie (2022-01-09)_
 </br>
 
 ## 📍 소개
-
-<img src="[https://storage.googleapis.com/static.fastcampus.co.kr/prod/uploads/202109/104011-472/group-1799.png](https://cdn.inflearn.com/public/courses/324139/course_cover/d599784c-a2ef-4c1b-97c0-7e663cd7764d/%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%A2%E1%84%92%E1%85%AA%E1%86%AB_%E1%84%8C%E1%85%A1%E1%84%87%E1%85%A1%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A2%E1%84%89%E1%85%B3.png)" width="300">
-
-인프런 강의
+크게 3가지 세션 클래스 이해 기초(오버로딩·생성자·접근제한자), 상속과 활용(오버라이딩·스태틱·추상클래스·인터페이스·다형성), 클래스 활용(은닉화·OOP)으로 클래스 중점인 기초 개념을 알려줍니다. ([인프런 강의 링크](https://inf.run/nP88))
 
 :information_desk_person: 강의 들으면서 중요하다고 생각되는 내용 위주로 작성한 정리본입니다.  
-
+</br>
 
 ## 1. 클래스의 이해 기초
 ### 클래스의 개념
