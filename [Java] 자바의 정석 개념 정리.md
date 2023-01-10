@@ -1,5 +1,5 @@
 # Java의 정석 - 학습 내용 정리
-_Assembled by yungenie (2022-05-27)_
+_Assembled by yunjin (2022-05-27)_
 
 </br>
 

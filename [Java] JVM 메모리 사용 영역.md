@@ -1,5 +1,5 @@
 # JVM 메모리 사용 영역(Runtime Data Area)
-_Assembled by yungenie (2021-07-15)_
+_Assembled by yunjin (2021-07-15)_
 
 </br>
 
