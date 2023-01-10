@@ -1,5 +1,5 @@
  # Collection Framework 컬렉션 프레임워크 
-_Assembled by yungenie (2023-01-01)_
+_Assembled by yunjin (2023-01-01)_
 
 </br>
 
@@ -57,7 +57,10 @@ _Assembled by yungenie (2023-01-01)_
 > - 프레임워크를 사용하면 생산성이 올라가고, 유지보수에 용이함 
 > - java.util 패키지에 포함되어 있고, jdk1.2부터 제공되어 있음 
 > - 검색, 저장, 정렬, 삭제 
->	
+>
+> ##### Collection 기본 메서드
+> - add(), remove(), size(), isEmpty(), iterator(), clear(), equals(), hashCode(), toArray(), contains(), retain() 등
+> 
 > ##### [`+여기서 잠깐`]() 객체를 다룬 다는 것은?   	
 >  - 데이터를 저장,삭제,검색,정렬을 하는 것을 의미함    
 >
@@ -339,43 +342,56 @@ _Assembled by yungenie (2023-01-01)_
 > - addAll(합집합), containsAll(부분집합), removeAll(차집합), retainAll(교집합)
 >
 > #### HashSet
-> - `순서를 유지하지 않고 중복을 허용하지 않음`
-> - `Set 인터페이스를 구현`한 대표적인 컬렉션 클래스
-> - `순서를 유지하려면, LinkedHashSet`클래스를 사용하면 된다.
-> 
+>> - `순서를 유지하지 않고 중복을 허용하지 않음`
+>> - `Set 인터페이스를 구현`한 대표적인 컬렉션 클래스
+>> - `순서를 유지하려면, LinkedHashSet`클래스를 사용하면 된다.
+>>
+>> #### 주요 메서드
+>> - HashSet()
+>> - HashSet(Collection c) 생성자
+>> - HashSet(int initialCapacity) 초기용량
+>> - HashSet(int initialCapacity, float loadFactor) 조건 0.8이면 80%차면 언제로 2배로 늘릴 것인지. (언제)
+>> - 보통 컬렉션 클래스들은 공간이 부족하면 스스로 늘리지만, loadFactor 통해 설정할 수 있음
+>> 
+>> 
+>> ##### 추가
+>> - boolean add(Object o)
+>>   - HashSet은 객체를 저장하기 전에 기존에 같은 객체가 있는 지 확인
+>>   - 같은 객체가 없으면 저장하고, 있으면 저장하지 않음
+>>   - add() 메서드 실행 시, equals(), hashCode() 호출해서 중복 유무 확인함
+>>   - equals(), hashCode()는 Object클래스에 있음
+>>   - equals(), hashCode()를 overriding 하지 않으면 HashSet이 제대로 동작안함
+>> - boolean addAll(Collection c) 합집합
+>>
+>> ##### 삭제
+>> - boolean remove(Object o)
+>> - boolean removeAll(Collection c) 교집합
+>> - boolean retainAll(Collection c) 차집합
+>> - void clear() 모두삭제
+>> 
+>> ##### 포함여부
+>> - boolean contains(Object o)
+>> - boolean containsAll(Collection c) Collection에 담긴 여러객체 모두 포함되어 있는 지
+>> - Iterator iterator()
+>> 
+>> ##### 기타
+>> - boolean isEmpty() 비어 있는 지 확인
+>> - int size()
+>> - Object[] toArray() 객체 배열로 반환
+>> - Object[] toArray(Object[ ] a)
+>
 > #### TreeSet
 > - `범위 검색와 정렬에 유리한` 컬렉션 클래스
-> - ★HashSet보다 데이터 추가, 삭제에 시간 소요됨.
->
-> #### 주요 메서드
-> - HashSet()
-> - HashSet(Collection c) 생성자
-> - HashSet(int initialCapacity) 초기용량
-> - HashSet(int initialCapacity, float loadFactor) 조건 0.8이면 80%차면 언제로 2배로 늘릴 것인지. (언제)
-> - 보통 컬렉션 클래스들은 공간이 부족하면 스스로 늘리지만, loadFactor 통해 설정할 수 있음
+> - ★HashSet보다 데이터 추가, 삭제에 시간 소요됨
+> - 이진 탐색 트리(binary search tree)로 구현됨
+>   - 이진 트리는 모든 노드가 최대 0~2개인 하위 노드를 갖음
+> - 각 요소(node)가 나무(tree)형태로 연결 (LinkedList의 변형)
+> - 루트(root)부터 시작됨
 > 
-> 
-> ##### 추가
-> - boolean add(Object o)
-> - boolean addAll(Collection c) 합집합
-> 
-> ##### 삭제
-> - boolean remove(Object o)
-> - boolean removeAll(Collection c) 교집합
-> - boolean retainAll(Collection c) 차집합
-> - void clear() 모두삭제
-> 
-> ##### 포함여부
-> - boolean contains(Object o)
-> - boolean containsAll(Collection c) Collection에 담긴 여러객체 모두 포함되어 있는 지
-> - Iterator iterator()
-> 
-> ##### 기타
-> - boolean isEmpty() 비어 있는 지 확인
-> - int size()
-> - Object[] toArray() 객체 배열로 반환
-> - Object[] toArray(Object[ ] a)
-
+> ##### 이진 탐색 트리(Binary Search Tree)
+> - 부모보다 작은 값은 왼쪽, 큰 값은 오른쪽에 저장
+> - 데이터가 많아질 수록 추가, 삭제에 시간이 더 걸림 (왜? 비교 횟수가 증가하기 때문)
+> - 이진트리 종류 중 하나임
 
 ## Map 인터페이스 - 순서 X, 중복(키X, 값o)
 
