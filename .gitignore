@@ -1,0 +1,12 @@
+# compiled class file
+*.class
+
+# Package Files
+
+# etc
+/out/*
+java-concept-summary.iml
+
+# intellj idea
+.idea
+
