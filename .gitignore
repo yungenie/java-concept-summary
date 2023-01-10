@@ -8,7 +8,7 @@
 *.tar.gz
 
 # intellJ IDEA
-
+.idea
 
 # etc
 *.iml
