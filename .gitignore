@@ -2,11 +2,14 @@
 *.class
 
 # Package Files
+*.jar
+*.war
+*.zip
+*.tar.gz
 
-# etc
-/out/*
-java-concept-summary.iml
-
-# intellj idea
+# intellJ IDEA
 .idea
 
+# etc
+*.iml
+out\
