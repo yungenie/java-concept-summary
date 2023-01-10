@@ -1,5 +1,5 @@
 # 혼자 공부하는 자바 - 용어노트
-_Assembled by yungenie (2023-01-09)_
+_Assembled by yunjin (2023-01-09)_
 
 </br>
 
