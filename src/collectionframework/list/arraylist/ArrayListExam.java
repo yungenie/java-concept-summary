@@ -7,9 +7,9 @@ import java.util.ArrayList;
  *  ArrayList 추가(add),범위(subList),정렬(Collections.sort),변경(set),검색(indexOf),삭제(remove) 기본 예제
  *  <p>
  *  <blockquote><pre>
- *  ArrayList : 순서 유지 O, 중복 허용 O, 배열기반
- *  add(Object o) : 객체만 저장가능
- *  → 매개변수 o는 autoboxing에 의해 기본형이 참조형으로 자동변환
+ *  - ArrayList : 순서 유지 O, 중복 허용 O, 배열기반
+ *  - add(Object o) : 객체만 저장가능
+ *    → 매개변수 o는 autoboxing에 의해 기본형이 참조형으로 자동변환
  *  </pre></blockquote>
  *  </p>
  * @author Yunjin
