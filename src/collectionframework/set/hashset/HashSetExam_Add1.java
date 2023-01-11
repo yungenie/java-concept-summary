@@ -9,7 +9,6 @@ import java.util.HashSet;
  *  - add() 메서드 실행 시, equals(), hashCode() 호출해서 중복 유무를 확인합니다.
  *  - 해당 예제는 equals(), hashCode() 오버라이딩 적용하지 않은 예제 입니다.
  *  </pre></blockquote></p>
- *  <p>
  *  <ul>
  *  <li> console result : [abc, David:10, David:10]
  *  <li> 결과? HashSet는 중복을 허용하지 않다고 했지만 중복 제거가 되지 않았습니다.
@@ -42,7 +41,6 @@ import java.util.HashSet;
  *      </pre></blockquote>
  *      </p>
  *  </ul>
- *  </p>
  * @author yunjin
  * @see HashSet
  * @see Object
