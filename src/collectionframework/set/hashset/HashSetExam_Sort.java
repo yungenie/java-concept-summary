@@ -4,13 +4,13 @@ package collectionframework.set.hashset;
 import java.util.*;
 
 /**
- * HashSet에 저장된 Interger객체(요소) 순서대로 정렬하는 예제
+ * HashSet에 저장된 Interger객체(요소) 순서대로 정렬하는 예제 <p>
  *
- * Set는 순서를 유지하지 않기 때문에 순서 유지가 되는 List를 사용
- * Collections.sort(List<T> list)
- * sort메서드는 List만 허용된다.
+ * Set는 순서를 유지하지 않기 때문에 순서 유지가 되는 List를 사용<p>
+ * Collections.sort(List<T> list)<p>
+ * sort메서드는 List만 허용된다.<p>
  *
- * @author yunjin
+ * @author Yunjin
  * @see Collection
  * @see HashSet
  * @see Set
@@ -36,6 +36,13 @@ public class HashSetExam_Sort {
         List list = new LinkedList(set);
         Collections.sort(list);
         System.out.println(list);
+
+        List list2 = new ArrayList(set);
+        Collections.sort(list2);
+        System.out.println(list2);
+
+        // LinkedList에 set 객체를 넣어 정렬 vs ArrayList에 set 객체를 넣어 정렬 성능차이?
+
 
     }
 }
