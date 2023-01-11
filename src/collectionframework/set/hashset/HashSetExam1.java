@@ -25,7 +25,7 @@ import java.util.Set;
  * 		_________________________________________________________________________
  *
  *
- * @author yunjin
+ * @author Yunjin
  * @see Collection
  * @see HashSet
  * @see Set
