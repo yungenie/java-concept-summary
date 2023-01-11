@@ -6,8 +6,8 @@ import java.util.List;
  * ArrayList 삭제(remove), 검색(subList) 기본 예제
  *  <p>
  *  <blockquote><pre>
- *  삭제(remove) : remove(index), remove(object)
- *  검색(subList) : subList(index from, index to) List 반환
+ *  - 삭제(remove) : remove(index), remove(object)
+ *  - 검색(subList) : subList(index from, index to) List 반환
  *  </pre></blockquote>
  *  </p>
  *
