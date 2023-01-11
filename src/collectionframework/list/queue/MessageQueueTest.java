@@ -3,13 +3,6 @@ package collectionframework.list.queue;
 import java.util.Queue;
 import java.util.LinkedList;
 
-
-/*
- * FIFO
- * offer() : 주어진 객체를 큐에 넣습니다.
- * peek() : 객체를 하나 가져옵니다. 객체를 제거하지 않습니다.
- * poll() : 객체를 하나 가져옵니다. 객체를 제거합니다.
- * */
 public class MessageQueueTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
