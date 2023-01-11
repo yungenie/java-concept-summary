@@ -15,7 +15,7 @@ import java.util.Set;
  *  - 순서를 유지하고 싶으면 LinkedHashSet 클래스 사용
  *  </pre></blockquote></p>
  *
- * @author yunjin
+ * @author Yunjin
  * @see Collection
  * @see HashSet
  * @see Set
