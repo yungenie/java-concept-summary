@@ -41,7 +41,7 @@ import java.util.HashSet;
  *      </pre></blockquote>
  *      </p>
  *  </ul>
- * @author yunjin
+ * @author Yunjin
  * @see HashSet
  * @see Object
  */
