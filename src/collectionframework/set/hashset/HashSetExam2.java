@@ -35,6 +35,7 @@ public class HashSetExam2 {
 		set.add("카리나");
 		set.add("지젤");
 		set.add("윈터");
+		set.add("윈터");
 		set.add("닝닝");
 		set.add("닝닝");
 
