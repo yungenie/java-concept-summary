@@ -53,7 +53,7 @@ class Person2 {
     @Override
     public int hashCode() {
         System.out.println("hashCode() 메서드 실행");
-        return Objects.hash(name, age); //어떤 의미인지 모르기 때문에 파악 필요.
+        return Objects.hash(name, age);
     }
 
     @Override
