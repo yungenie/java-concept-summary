@@ -39,7 +39,7 @@ public class HashSetExam2 {
 		set.add("닝닝");
 
 		// 3. 데이터 출력
-		// 기본 출력
+		// 확인
 		System.out.println(set);
 
 		// Collection 인터페이스의 iterator() 사용
