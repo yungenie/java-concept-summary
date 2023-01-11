@@ -1,19 +1,24 @@
 package collectionframework.list.arraylist;
 
+import java.util.Collection;
 import java.util.List;
 /**
- * ArrayList 예제 테스트
+ * ArrayList 삭제(remove), 검색(subList) 기본 예제
+ *  <p>
+ *  <blockquote><pre>
+ *  삭제(remove) : remove(index), remove(object)
+ *  검색(subList) : subList(index from, index to) List 반환
+ *  </pre></blockquote>
+ *  </p>
  *
  * @author  Yunjin
- * @since   JDK1.8
+ * @see Collection
+ * @see ArrayList
+ * @since 1.8
  */
 public class ArrayList {
     public static void main(String[] args) {
 
-        /**
-         *  remove(index), remove(object)
-         *  subList(index from, index to) List 반환
-         * */
         java.util.ArrayList list = new java.util.ArrayList();
         list.add("자바의 정석");
         list.add("1강");
