@@ -4,36 +4,23 @@ import java.util.Collections;
 import java.util.ArrayList;
 
 /**
- *  ArrayList 예제 소스입니다.
- *
- *
+ *  ArrayList 추가(add),범위(subList),정렬(Collections.sort),변경(set),검색(indexOf),삭제(remove) 기본 예제
  *  <p>
  *  <blockquote><pre>
- *      ArrayList 추가
- *      ArrayList 범위
- *      ArrayList 정렬
- *      ArrayList 변경
- *      ArrayList 검색
- *      ArrayList 삭제
+ *  ArrayList : 순서 유지 O, 중복 허용 O, 배열기반
+ *  add(Object o) : 객체만 저장가능
+ *  → 매개변수 o는 autoboxing에 의해 기본형이 참조형으로 자동변환
  *  </pre></blockquote>
- *
- * @since JDK1.8
+ *  </p>
+ * @author Yunjin
  * @see Collections
  * @see ArrayList
- * @author Yunjin
+ * @since JDK1.8
 
  */
 public class ArrayListExam {
 
-
     public static void main(String[] args) {
-
-        /**
-         * ArrayList 순서 O, 중복 O, 배열기반
-         * ArrayList는 객체만 저장가능
-         * autoboxing에 의해 기본형이 참조형으로 자동변환
-         * 추가 add(Object e)
-         * */
 
         // 1. ArrayList 추가
         ArrayList list1 = new ArrayList(10);
