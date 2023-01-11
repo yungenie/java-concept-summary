@@ -8,7 +8,13 @@ import java.util.Set;
 /**
  * Object배열에 담긴 요소 HashSet 저장 후 Iterator 이용해 출력하는 예제
  *
- * @author yunjin
+ * <ul>
+ * <li> console result : [1, 1, 2, 3, 4] <p>
+ * - 저장순서를 유지하지 않기 때문에 정확히 문자열 1, Integer 객체 1의 순서를 알 수 없다.
+ * </ul>
+ *
+ *
+ * @author Yunjin
  * @see Collection
  * @see HashSet
  * @see Set
@@ -39,15 +45,3 @@ public class HashSetExam_ObjectArr {
         }
     }
 }
-
-/*
-* result :
-[1, 1, 2, 3, 4]
-1
-1
-2
-3
-4
-// 저장순서를 유지하지 않기 때문에 정확히 문자열 1, Integer 객체 1의 순서를 알 수 없다.
-*
-* */
