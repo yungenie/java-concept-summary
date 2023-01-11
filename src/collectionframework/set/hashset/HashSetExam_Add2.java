@@ -18,7 +18,7 @@ import java.util.Objects;
  *  <li> Objects.hash(Object....values)?<p>
  *      - 매개 값(가변인자)으로 주어진 값들을 이용해서 해시 코드를 생성하는 역할인 메서드 입니다.
 
- * @author yunjin
+ * @author Yunjin
  * @see HashSet
  * @see Object
  * @since 1.8
