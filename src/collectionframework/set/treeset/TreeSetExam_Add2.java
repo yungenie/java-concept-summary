@@ -11,7 +11,7 @@ import java.util.TreeSet;
  *      - Set는 순서를 유지하지 않고 중복을 허용하지 않는 특징이 있습니다.
  *      - 중복 제거를 위해 add() 메서드 내부적으로 비교 후 저장을 합니다.
  *      - 비교할 때 비교 기준이 있어야 하는데, 그 비교 기준을 제공하는 Comparator이 있습니다.
- *      - Comparator 기준이 없으면 저장하는 객체의 Comparable를 사용합니다.
+ *      - Comparator 기준이 없으면 저장하는 객체의 Comparable 인터페이스를 구현합니다.
  * </p></blockquote></pre>
  * <ul>
  * <li> add(Object o) 저장할 o 객체의 클래스에 Comparable 인터페이스를 구현하여 compareTo() 오버라이딩합니다.</li>
