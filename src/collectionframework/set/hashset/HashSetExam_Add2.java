@@ -28,9 +28,11 @@ public class HashSetExam_Add2 {
         HashSet set = new HashSet();
 
         set.add("abc");
+        set.add(new Person2("David",10));
         set.add("abc");
+        set.add("yunjin");
         set.add(new Person2("David",10));
-        set.add(new Person2("David",10));
+        set.add("yunjin");
 
         System.out.println(set); //toString 생략해도 된다.
     }
