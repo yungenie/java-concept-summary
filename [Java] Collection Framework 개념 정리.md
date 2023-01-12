@@ -407,6 +407,32 @@ _Assembled by yunjin (2023-01-01)_
 >> - 이진 트리의 모든 노드를 한번씩 읽는 것을 트리 순회라함
 >> - 전위(pre order), 중위(in order), 후위(post order), 레벨(level order) 순회법이 있음
 >> - 중위 순위면 오름차순으로 정렬됨
+>> ##### TreeSet 데이터 저장
+>> - 데이터 저장 시, 중복을 허용하지 않기 하기 위해 비교기준을 줘야 함
+>> - 방법1
+>>   - add(Object o) : 저장하는 o 객체가 Comparable 구현
+>>   - 저장하는 객체에 Comparable 인터페이스를 구현하여 compareTo(Object o) 메서드 오버라이딩
+>> - 방법2
+>>   - TreeSet(Comparator comp) : 
+>>     TreeSet() 생성자에 정렬기준을 갖는 Comparator 인터페이스를 구현하는 클래스 생성 및 compare(Object o1, Object o2) 오버라이딩
+>
+> #### TreeSet vs HashSet 요약 비교
+>> ##### TreeSet vs HashSet 특징 비교
+>> - TreeSet : 범위검색, 정렬에 유리한 클래스
+>> - HashSet :  TreeSet보다 데이터 추가, 삭제에 유리한 클래스이나
+>>   HashSet은 정렬 필요 (List 생성 후 sort() 해야함)
+>>
+>> ##### HashSet vs TreeSet add()시 정렬비교
+>> - HashSet  :  저장하는 객체에 equals(), hashCode() 오버라이딩 
+>> - TreeSet :  비교기준 Comparator 가 없으면 저장하는 객체 Comparable 구현 compareTo() 오버라이딩. 
+>>   비교기준 Comparator 구현할 때 compare() 오버라이딩
+>> 
+>> ※ 기본 및 자체 클래스에 구현되어 있는 경우도 있고, 없는 경우는 추가 구현 및 비교기준 메서드 오버라이딩 해야한다. 
+>> add() 메서드는 바로 데이터를 저장하는 게 아니고 내부적으로 데이터들을 비교하면서 저장합니다. 
+>> 비교할 때 비교 기준이 있어야 하는데, 그 비교 기준을 제공하는 Comparator가 있습니다.
+>> Comparator 기준이 없으면 저장하는 객체의 Comparable를 사용합니다.
+>> 원래는 비교 기준이 필수 이다. 안주면 저장하는 객체의 Comparable 이용합니다.
+
 
 ## Map 인터페이스 - 순서 X, 중복(키X, 값o)
 
