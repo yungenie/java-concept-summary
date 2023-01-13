@@ -432,26 +432,29 @@ _Assembled by yunjin (2023-01-01)_
 >> 비교할 때 비교 기준이 있어야 하는데, 그 비교 기준을 제공하는 Comparator가 있습니다.
 >> Comparator 기준이 없으면 저장하는 객체의 Comparable를 사용합니다.
 >> 원래는 비교 기준이 필수 이다. 안주면 저장하는 객체의 Comparable 이용합니다.
-
-
-## Map 인터페이스 - 순서 X, 중복(키X, 값o)
-
-
-	                    Map
-         ↗             ↑               ↖
-    HashTable(old)  HashMap(new)*     SortedMap
-                        ↑                ↑
-                    LinkedHashMap     TreeMap*
-                     (순서 o)
-
-     HashTable 동기화 o
-     HashMap 동기화 x
-
-- 삭제 clear, remove
-- 검색 get, containsKey, containsValue
-- 저장 put
-- 읽기 entrySet, keySet, values
-
+>
+> #### Map 인터페이스 - 순서 X, 중복(키X, 값o)
+>
+>
+>	                    Map
+>          ↗              ↑               ↖
+>     HashTable(old)  HashMap(new)*     SortedMap
+>                         ↑                ↑
+>                    LinkedHashMap     TreeMap*
+>                     (순서 o)
+>
+>     HashTable 동기화 o
+>     HashMap 동기화 x
+> 
+> ##### 주요 메서드
+> - 삭제 clear, remove 
+> - 검색 get, containsKey, containsValue
+> - 저장 put
+> - 읽기 entrySet, keySet, values
+> 
+> #### HashMap
+> - Map 인터페이스 구현, 데이터를 키와 값의 쌍으로 저장
+> - HashMap(동기화x)은 Hashtable(동기화O)의 신버전
 	
 </div>
 </details> 
