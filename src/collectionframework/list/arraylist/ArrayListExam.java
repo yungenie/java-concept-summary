@@ -13,7 +13,7 @@ import java.util.List;
  *
  * @author  Yunjin
  * @see Collection
- * @see ArrayList
+ * @see java.util.ArrayList
  * @since 1.8
  */
 public class ArrayListExam {
