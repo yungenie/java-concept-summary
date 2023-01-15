@@ -168,12 +168,8 @@ _Assembled by yunjin (2023-01-01)_
 >> * ArrayList 비효율적인 메모리 사용   
 >>	→ 성능을 높히기 위해서 배열의 크기를 높게 잡을 때, 배열의 단점이 복사/이동이 문제임   
 >>	그걸 적게 일어나게 하려면 크기를 크게 잡아야 해서 비효율적임
-> 
-> 	
-> 	
-> 		
+>
 > #### Stack
-> #### Stack(스택)
 >> - LIFO 구조 (Last In First Out)   
 >> - 마지막에 저장된 것을 제일 먼저 꺼내게 됨
 >> - 제일 처음 저장된 것을 마지막에 꺼내게 됨  
@@ -252,7 +248,8 @@ _Assembled by yunjin (2023-01-01)_
 >> - ex) LinkedList 데이터 요소를 읽어 올 때 listIterator() 메서드를 이용함 	
 > 
 > #### Map
->> - `Collection 자손이 아니기 때문에 Iterator 없음`
+>> - `Collection 자손이 아니기 때문에 Iterator 메서드가 없음`
+>> - Map에서 데이터를 불러오려면 (Set type)KeySet(), (Set type)entrySet(), (Collections)values() 호출
 >> 
 >> #### 메서드 
 >> - keySet() 
@@ -327,9 +324,9 @@ _Assembled by yunjin (2023-01-01)_
 >>	2. 자리바꿈 (기준) 
 >>	→ 오름차순, 내림차순에 따라 자리 변동 
 >>	3. 1,2번 반복 (반복)            
->>	- 정렬 방법은 똑같다. 단, 전략이 다르다. (정렬기준 등) 
->
->## Set 인터페이스 - 순서 X, 중복 X
+>>    - 정렬 방법은 똑같다. 단, 전략이 다르다. (정렬기준 등)
+>>    
+#### Set
 >
 >                 Set
 >        ↗         ↑
@@ -337,6 +334,7 @@ _Assembled by yunjin (2023-01-01)_
 >                   ↑
 >                TreeSet*
 >  
+> - Set 인터페이스 - 순서 X, 중복 X
 > 
 > #### 집합관련 메서드
 > - addAll(합집합), containsAll(부분집합), removeAll(차집합), retainAll(교집합)
@@ -433,10 +431,10 @@ _Assembled by yunjin (2023-01-01)_
 >> Comparator 기준이 없으면 저장하는 객체의 Comparable를 사용합니다.
 >> 원래는 비교 기준이 필수 이다. 안주면 저장하는 객체의 Comparable 이용합니다.
 >
-> #### Map 인터페이스 - 순서 X, 중복(키X, 값o)
+#### Map 
 >
 >
->	                    Map
+>	                       Map
 >          ↗              ↑               ↖
 >     HashTable(old)  HashMap(new)*     SortedMap
 >                         ↑                ↑
@@ -446,15 +444,53 @@ _Assembled by yunjin (2023-01-01)_
 >     HashTable 동기화 o
 >     HashMap 동기화 x
 > 
-> ##### 주요 메서드
+> - 인터페이스 - 순서 X, 중복(키X, 값o)
+> - Map 인터페이스 구현, 데이터를 키와 값의 쌍으로 저장
+> - HashMap(동기화x)은 Hashtable(동기화O)의 신버전
+> - 순서를 유지하려면, LinkedHashMap 클래스를 사용하면 됨
+>  
+> ##### Map 주요 메서드
 > - 삭제 clear, remove 
 > - 검색 get, containsKey, containsValue
 > - 저장 put
 > - 읽기 entrySet, keySet, values
 > 
-> #### HashMap
-> - Map 인터페이스 구현, 데이터를 키와 값의 쌍으로 저장
-> - HashMap(동기화x)은 Hashtable(동기화O)의 신버전
+> ##### HashMap
+> - Map 인터페이스 구현한 대표적인 컬렉션 클래스
+> - 순서를 유지하지 않고, 키는 중복을 허용하지 않으며 값은 중복을 허용함
+> - 해싱(Hashing)기법으로 데이터 저장. 데이터가 많아도 검색이 빠름
+> 
+> ##### HashMap 주요 메서드
+> - HashMap()
+> - HashMap(int initialCapacity) //배열의 초기용량
+> - HashMap(int initialCapacity, float loadFactor)
+> - HashMap(Map m)
+>
+> ##### 해싱 hashing
+> - 해시함수로 해시 테이블에 데이터 저장, 검색
+> 
+> ##### TreeMap
+> - 범위 검색과 정렬에 유리한 컬렉션 클래스
+> - HashMap보다 데이터 추가, 삭제에 시간이 더 걸림 (왜? 비교 횟수 증가로)
+> - TreeSet과 같은 특성을 가짐. 이진 탐색 트리로 구현되어 있음 
+> - 키를 넣으면 해시함수로부터 해시코드(저장위치)가 나옴
+> - 해당 저장위치에 저장되어 있는 데이터들을 해시 테이블(hash table)이라고 함
+> - 해시 테이블은 배열과 링크드 리스트가 조합된 형태
+> - 배열의 접근성(인덱스 위치로 데이터 찾음) + 링크드리스트의 변경하기 유리한 장점이 섞인 것
+> - 해시함수는 Object.hash() 메서드를 이용하면 됨
+> - 해시함수를 사용한 클래스 : HashTable, HashMap, HastSet
+> 
+> ##### 해싱 (해시 테이블에서 저장된 데이터 가져오는 과정)
+> 1. 키로 해시함수를 호출해서 해시코드(배열의 index)를 받환 받음
+> 2. 해시코드(해시함수의 반환값)에 대응하는 링크드리스트를 배열에서 찾음
+> 3. 링크드리스트에서 키와 일치하는 데이터를 찾음
+> ※ 해시함수는 같은 키에 대해 항상 같은 해시코드를 반환해야함
+> ※ 서로다른 키일지라도 같은 값의 해시코드를 반환할 수도 있음
+> 
+#### Collections 정리
+> - 컬렉션을 위한 메서드(static) 제공
+> - fill(), copy(), sort(), binarySearch()
+> - singletonXXX(), checkedXXX()
 	
 </div>
 </details> 
