@@ -3,7 +3,21 @@ package collectionframework.list.arraylist;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
+/**
+ * List와 ArrayList 차이
+ *  <p>
+ *  <blockquote><pre>
+ *  - Arrays.asList : 읽기 전용
+ *  - ArrayList : 변경 가능
+ *  </pre></blockquote>
+ *  </p>
+ *
+ * @author  Yunjin
+ * @see List
+ * @see Arrays
+ * @see ArrayList
+ * @since 1.8
+ */
 public class ArrayList_asListExam {
     public static void main(String[] args) {
 
