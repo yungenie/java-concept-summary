@@ -1,4 +1,4 @@
-package constructor;
+package oop.constructor;
 
 /**
  * 생성자 기본 예제
