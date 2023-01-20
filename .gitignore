@@ -13,3 +13,4 @@
 # etc
 *.iml
 out\
+.gitignore
