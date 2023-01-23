@@ -231,6 +231,7 @@ _Assembled by yunjin (2022-05-27)_
     ● 그 외 : static, final, abstract
     * public 안쓰면 default로 써야함.
     * 접근 제어자는 제일 왼쪽, 1개만 쓸 수 있다.
+    * 클래스는 public, (default) 접근 제어자만 가능하다
 
 #### [ch7] static 변수와 메서드
     ● static 변수(멤버변수)
