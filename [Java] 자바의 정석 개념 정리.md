@@ -608,6 +608,32 @@ _Assembled by yunjin (2022-05-27)_
     ● interrupt()
         -   대기상태(WAITNG)인 쓰레드를 실행대기(RUNNABLE) 상태로 만든다.
 
+    → sleep()과 interrupt() 잠든 걸 깨우는 행위
+
+#### [ch13 26~27] suspend(), resume(), stop()
+    ● suspend()
+        - 쓰레드를 일시정지 시킨다.
+    ● resume()  
+        - suspend()에 의해 일시정지된 쓰레드를 실행대기상태로 만든다.
+
+    → suspend(), resume(), stop()은 교착상태에 빠지기 쉬워서 deprecated 되었다.
+    → suspend()과 resume() 쓰레드의 실행을 일시정지 후 재개
+
+
+#### [ch13 30~36] 쓰레드의 동기화, wait()과 notify()
+    ● 동기화 (synchronization)
+    - 진행중인 작업이 다른 쓰레드에게 간섭받지 않게 하려면 '동기화'가 필요.
+        - 동기화를 하라면 간섭받지 않아야 하는 구간을 '임계 영역'으로 설정
+        - 임계영역은 LOCK을 얻은 단 하나의 쓰레드만 출입가능 (객체 1개에 LOCK 1개)
+    ● wait()과 notify()
+    - 동기화의 효율을 높히기 위해 사용
+    - wait() : 객체의 LOCK을 풀고 쓰레드를 해당 객체의 waiting pool에 넣는다.
+    - notify() : waiting pool에서 대기 중인 쓰레드 중의 하나를 깨운다.
+    - notifyAll() : waiting pool에서 대기 중인 쓰레드 모두를 깨운다.
+
+    ● LOCK & CONDITION
+    - wait()과 notify() waiting pool 어떤 대상을 깨우는 지 구분이 안되는 단점을 해소함
+
 #### [람다1] T
     클래스 밖에 있는 걸 함수라 부른다.
     자바에서는 클래스 밖에 있을 수 없기 때문에 전부다 메서드이다.
