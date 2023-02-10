@@ -2,6 +2,20 @@ package lambda;
 
 import java.util.*;
 
+/**
+ * lamdba forEach문 출력 기본예제
+ *  <p>
+ *  <blockquote><pre>
+ *  - fori문 출력
+ *  - foreach문 출력
+ *  - foreach문 출력 (컴파일)
+ *  - forEach문 출력
+ *  </pre></blockquote>
+ *  </p>
+ *
+ * @author Yunjin
+ * @since 1.8
+ */
 public class ForEachExam01 {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
@@ -21,7 +35,7 @@ public class ForEachExam01 {
             System.out.println(item);
         }
 
-        // foreach문 컴파일
+        // foreach문 (컴파일)
         Iterator<Integer> var4 = list.iterator();
         while(var4.hasNext()) {
             System.out.println(var4.next());
