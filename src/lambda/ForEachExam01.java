@@ -66,13 +66,7 @@ public class ForEachExam01 {
 
         map.forEach((k,v) ->System.out.println("{" + k + "," + v + "}\n")); // System.out::println 사용 못하는 지?
 
-
-
-
-
-
-
-
+        // caffein overflow님 예제
 
     }
 }
