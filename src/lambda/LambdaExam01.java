@@ -1,7 +1,7 @@
 package lambda;
 
 /**
- *  람다식 작성하기 예제
+ *  람다식 작성하기 - 익명객체와 함수형 인터페이스를 사용한 람다식 비교(익명객체 vs 함수형 인터페이스)
  *  <p>
  *  <blockquote><pre>
  *  - 람다식(익명 객체)을 다루기 위한 참조변수의 타입은 함수형 인터페이스로 한다.
@@ -30,12 +30,13 @@ public class LambdaExam01 {
                 return 0;
             }
         };
-
         int myFuncResult = myFunc.max(5, 17);
 
+        MyFunction myFunc2 = (a, b) -> a > b ? a : b;
+        int myFuncResult2 = myFunc2.max(5, 17);
 
         // 익명 객체 람다식 사용하기
-        MyFunction myFuncLamdba =  (a,b) -> a > b? a: b;
+        MyFunction myFuncLamdba =  (a,b) -> a > b? a : b;
         int myFuncLamdbaResult = myFuncLamdba.max(3, 5);
 
     }
