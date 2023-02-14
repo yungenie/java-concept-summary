@@ -3,7 +3,7 @@ package lambda;
 import java.util.*;
 
 /**
- * lamdba forEach문 출력 기본예제
+ * 람다식 작성하기 - forEach()문 출력 예제
  *  <p>
  *  <blockquote><pre>
  *  - fori문 출력
@@ -50,7 +50,7 @@ public class ForEachExam01 {
         });
 
         // forEach문 메서드 레퍼런스
-        list.forEach(System.out::println); // System.out::println 어떤 경우에 사용?
+        list.forEach(System.out::println);
 
         Map<String, String> map = new HashMap<>();
         map.put("name", "yunjin");
@@ -64,9 +64,10 @@ public class ForEachExam01 {
             System.out.println(iterator.next());
         }
 
-        map.forEach((k,v) ->System.out.println("{" + k + "," + v + "}\n")); // System.out::println 사용 못하는 지?
+        map.forEach((k,v) -> System.out.println("{" + k + "," + v + "}\n"));
 
-        // caffein overflow님 예제ㅣ
+        // TODO
+        // caffein overflow님 예제 추가하기!
 
     }
 }
