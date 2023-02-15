@@ -3,7 +3,7 @@ package lambda;
 import java.util.*;
 
 /**
- *  Lambda - Collections.sort() 비교기준 예제 (List 정렬)
+ *  Lambda - Collections.sort() 비교기준 (List 정렬)
  *  <p>
  *  <blockquote><pre>
  *  - List Collections.sort() 정렬시 비교기준 람다식 적용하기
