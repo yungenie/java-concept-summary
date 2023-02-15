@@ -3,7 +3,7 @@ package lambda;
 import java.util.*;
 
 /**
- * 람다식 작성하기 - forEach()문 출력 예제
+ *  Lambda - forEach()문 출력
  *  <p>
  *  <blockquote><pre>
  *  - fori문 출력
@@ -14,6 +14,9 @@ import java.util.*;
  *  </p>
  *
  * @author Yunjin
+ * @see ArrayList
+ * @see Iterator
+ * @see HashMap
  * @since 1.8
  */
 public class ForEachExam01 {
@@ -65,9 +68,5 @@ public class ForEachExam01 {
         }
 
         map.forEach((k,v) -> System.out.println("{" + k + "," + v + "}\n"));
-
-        // TODO
-        // caffein overflow님 예제 추가하기!
-
     }
 }
