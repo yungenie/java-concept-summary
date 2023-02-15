@@ -29,7 +29,7 @@ public class StreamExam01 {
         intStream.forEach(System.out::println); // 최종연산 수행 후 Stream 닫힘
 
         // 3. Stream 재생성
-        intStream = list.stream();  // List(데이터 소스) -> 새로운 Stream 재생성
+        intStream = list.stream();  // List(데이터 소스) -> Stream 재생성
 
         // 4. Stream 모든 요소 출력
         intStream.forEach(System.out::print);
