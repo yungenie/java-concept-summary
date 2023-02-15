@@ -19,8 +19,6 @@ public class RangeIntStreamExam01 {
         IntStream intStreamRange = IntStream.range(1, 5);
         intStreamRange.forEach(System.out::print);
 
-        System.out.println("");
-
         // 특정 범위의 정수 begin ~ end 포함
         IntStream intStreamRangeClosed = IntStream.rangeClosed(6, 17);
         intStreamRangeClosed.forEach(System.out::print);
