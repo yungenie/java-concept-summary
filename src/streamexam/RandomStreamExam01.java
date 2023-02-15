@@ -32,7 +32,7 @@ public class RandomStreamExam01 {
         IntStream limitedRangeIntStream = new Random().ints(77, 127).limit(5);
         //limitedRangeIntStream.forEach(System.out::println);
 
-        // 지정된 범위의 난수를 요소로 갖는 스트림 생성 (범위 및 제한 동시에)
+        // 지정된 범위의 난수를 요소로 갖는 스트림 생성 (범위 및 제한 동시)
         IntStream limitedRangeIntStream2 = new Random().ints(3, 77, 127);
         limitedRangeIntStream2.forEach(System.out::println);
     }
