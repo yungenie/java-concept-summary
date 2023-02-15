@@ -4,7 +4,7 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 
 /**
- *  람다식 작성하기 - 생성자 메서드 참조 예제 (객체 생성)
+ *  Lambda - 생성자 메서드 참조 (객체 생성)
  *  <p>
  *  <blockquote><pre>
  *  - 생성자 메서드의 new(연산자) 참조.
@@ -18,6 +18,8 @@ import java.util.function.Supplier;
  *
  *  ※ 메서드 참조 -> 람다식으로 변형하는 것도 공부해두기. (입력, 출력 확인)
  * @author Yunjin
+ * @see Supplier
+ * @see Function
  * @since 1.8
  */
 public class GeneratorMethodReferenceExam01 {
