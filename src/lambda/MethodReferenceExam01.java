@@ -3,7 +3,7 @@ package lambda;
 import java.util.function.Function;
 
 /**
- *  람다식 작성하기 - static 메서드 참조 예제 (문자열을 숫자형으로 변환)
+ *  Lambda - static 메서드 참조 (문자열을 숫자형으로 변환)
  *  <p>
  *  <blockquote><pre>
  *  - Integer(Wrapper Class)의 parseInt(staic 메서드) 참조.
@@ -15,6 +15,8 @@ import java.util.function.Function;
  *  </p>
  *  ※ 메서드 참조 -> 람다식으로 변형하는 것도 공부해두기. (입력, 출력 확인)
  * @author Yunjin
+ * @see Function
+ * @see Integer
  * @since 1.8
  */
 public class MethodReferenceExam01 {
