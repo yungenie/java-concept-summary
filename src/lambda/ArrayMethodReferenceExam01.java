@@ -3,7 +3,7 @@ package lambda;
 import java.util.function.Function;
 
 /**
- *  람다식 작성하기 - 배열과 메서드 참조 예제 (i의 크기를 가진 배열 생성 후 반환)
+ *  Lambda - 배열과 메서드 참조 예제 (i의 크기를 가진 배열 생성 후 반환)
  *
  *  <p>
  *  <blockquote><pre>
@@ -16,6 +16,7 @@ import java.util.function.Function;
  *  </p>
  *  ※ 메서드 참조 -> 람다식으로 변형하는 것도 공부해두기. (입력, 출력 확인)
  * @author Yunjin
+ * @see Function
  * @since 1.8
  */
 public class ArrayMethodReferenceExam01 {
