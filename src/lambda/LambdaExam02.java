@@ -3,7 +3,7 @@ package lambda;
 import java.util.*;
 
 /**
- *  람다식 작성하기 - Collections.sort() 비교기준 예제 (List 정렬)
+ *  Lambda - Collections.sort() 비교기준 예제 (List 정렬)
  *  <p>
  *  <blockquote><pre>
  *  - List Collections.sort() 정렬시 비교기준 람다식 적용하기
@@ -11,6 +11,10 @@ import java.util.*;
  *  </p>
  *
  * @author Yunjin
+ * @see Arrays
+ * @see List
+ * @see Collections
+ * @see Comparator
  * @since 1.8
  */
 public class LambdaExam02 {
