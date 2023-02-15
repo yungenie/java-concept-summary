@@ -3,7 +3,7 @@ package lambda;
 import java.util.function.Function;
 
 /**
- *  Lambda - 배열과 메서드 참조 예제 (i의 크기를 가진 배열 생성 후 반환)
+ *  Lambda - 배열과 메서드 참조 (i의 크기를 가진 배열 생성 후 반환)
  *
  *  <p>
  *  <blockquote><pre>
