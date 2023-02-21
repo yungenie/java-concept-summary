@@ -3,7 +3,7 @@ package streamexam;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
-/** Stream 중간연산 - map(), flatMap()
+/** Stream 중간연산 - flatMap()
  * <p><blockquote><pre>
  *     {@code <R> Stream<R> map(Function<? super T,? extends R> mapper)}
  *     - map() 연산은 지정된 함수를 스트림의 요소에 적용한 결과로 구성된 스트림을 반환합니다.
