@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 /** Stream 중간연산 - flatMap()
  * <p><blockquote><pre>
  *     {@code <R> Stream<R> map(Function<? super T,? extends R> mapper)}
- *     - map() 연산은 지정된 함수를 스트림의 요소에 적용한 결과로 구성된 스트림을 반환합니다.
+ *     - map() 연산은 지정된 메서드를 스트림의 요소에 적용한 결과로 구성된 스트림을 반환합니다.
  *
  *     {@code <R> Stream<R> flatMap(Function<? super T,? extends Stream<? extends R>> mapper)}
  *     - flatMap() 연산은 스트림의 요소에 일대일 변환을 적용한 다음 결과 요소를 새로운 스트림과 평탄화 합니다.
