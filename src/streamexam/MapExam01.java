@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 /** Stream 중간연산 - 파일 스트림에서 파일 확장자 중복 없이 뽑아내기 (map(), peek())
  * <p><blockquote><pre>
  *     {@code <R> Stream<R> map(Function<? super T,? extends R> mapper)}
- *     - map() 연산은 지정된 함수를 스트림의 요소에 적용한 결과로 구성된 스트림을 반환합니다.
+ *     - map() 연산은 지정된 메서드를 스트림의 요소에 적용한 결과로 구성된 스트림을 반환합니다.
  *
  *     {@code Stream<T> peek(Consumer<? super T> action)}
  *     - 주로 디버깅을 지원하기 위해 사용하고 특정 지점을 통과할 때 요소를 볼 수 있습니다.
