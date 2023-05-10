@@ -286,7 +286,7 @@ _Assembled by yunjin (2023-01-01)_
 > #### Array 
 >> - 배열을 다루기 편리한 메서드(static) 제공 
 >> - Objects, Collections, Math  
->> 	→ util 클래스라고 부름
+>> 	→ 위 3개 클래스는 static 메서드를 제공하고, util 클래스라고 부름
 >> 
 >> #### 배열의 출력 
 >> - toString() 
