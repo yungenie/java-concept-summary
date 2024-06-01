@@ -8,22 +8,22 @@ public class MessageQueueTest {
 		// TODO Auto-generated method stub
 		Queue<Message> messageQueue = new LinkedList<>();
 		
-		messageQueue.offer(new Message("sendMail","È«±æµ¿"));
-		messageQueue.offer(new Message("sendSMS","À±Áø"));
-		messageQueue.offer(new Message("sendKakaotalk","¿µ±Ù"));
+		messageQueue.offer(new Message("sendMail","í™ê¸¸ë™"));
+		messageQueue.offer(new Message("sendSMS","ìœ¤ì§„"));
+		messageQueue.offer(new Message("sendKakaotalk","ì˜ê·¼"));
 		
 		while(!messageQueue.isEmpty()) {
 			Message message = messageQueue.poll();
 			
 			switch(message.command){
 				case "sendMail":
-					System.out.println(message.to + "´Ô¿¡°Ô ¸ŞÀÏÀ» º¸³À´Ï´Ù.");
+					System.out.println(message.to + "ë‹˜ì—ê²Œ ë©”ì¼ì„ ë³´ëƒ…ë‹ˆë‹¤.");
 					break;
 				case "sendSMS":
-					System.out.println(message.to + "´Ô¿¡°Ô SMSÀ» º¸³À´Ï´Ù.");
+					System.out.println(message.to + "ë‹˜ì—ê²Œ SMSì„ ë³´ëƒ…ë‹ˆë‹¤.");
 					break;
 				case "sendKakaotalk":
-					System.out.println(message.to + "´Ô¿¡°Ô Ä«Ä«¿ÀÅåÀ» º¸³À´Ï´Ù.");
+					System.out.println(message.to + "ë‹˜ì—ê²Œ ì¹´ì¹´ì˜¤í†¡ì„ ë³´ëƒ…ë‹ˆë‹¤.");
 			}
 			
 		}

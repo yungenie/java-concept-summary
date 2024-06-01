@@ -6,22 +6,22 @@ import java.util.Iterator;
 import java.util.Set;
 
 /**
- * ¿¹Á¦) String °´Ã¼¸¦ Áßº¹ ¾øÀÌ ÀúÀåÇÏ´Â HashSet
+ * ì˜ˆì œ) String ê°ì²´ë¥¼ ì¤‘ë³µ ì—†ì´ ì €ì¥í•˜ëŠ” HashSet
  *
- * ¼³¸í )
- *		Set ÄÃ·º¼ÇÀº ÀÎµ¦½º·Î °´Ã¼¸¦ °Ë»öÇØ¼­ °¡Á®¿À´Â ¸Ş¼Òµå°¡ ¾ø½À´Ï´Ù.
- * 		´ë½Å, °´Ã¼¸¦ ÀüÃ¼¸¦ ´ë»óÀ¸·Î ÇÑ ¹ø¾¿ ¹İº¹ÇØ¼­ °¡Á®¿À´Â ¹İº¹ÀÚ(iterator)¸¦ Á¦°øÇÕ´Ï´Ù.
- * 		¹İº¹ÀÚ´Â Iterator ÀÎÅÍÆäÀÌ½º¸¦ ±¸ÇöÇÑ °´Ã¼
+ * ì„¤ëª… )
+ *		Set ì»¬ë ‰ì…˜ì€ ì¸ë±ìŠ¤ë¡œ ê°ì²´ë¥¼ ê²€ìƒ‰í•´ì„œ ê°€ì ¸ì˜¤ëŠ” ë©”ì†Œë“œê°€ ì—†ìŠµë‹ˆë‹¤.
+ * 		ëŒ€ì‹ , ê°ì²´ë¥¼ ì „ì²´ë¥¼ ëŒ€ìƒìœ¼ë¡œ í•œ ë²ˆì”© ë°˜ë³µí•´ì„œ ê°€ì ¸ì˜¤ëŠ” ë°˜ë³µì(iterator)ë¥¼ ì œê³µí•©ë‹ˆë‹¤.
+ * 		ë°˜ë³µìëŠ” Iterator ì¸í„°í˜ì´ìŠ¤ë¥¼ êµ¬í˜„í•œ ê°ì²´
  *
- * 		[iterator ÀÎÅÍÆäÀÌ½º¿¡ ¼±¾ğµÈ ¸Ş¼Òµå]
+ * 		[iterator ì¸í„°í˜ì´ìŠ¤ì— ì„ ì–¸ëœ ë©”ì†Œë“œ]
  * 		_________________________________________________________________________
- * 		 ¸®ÅÏÅ¸ÀÔ	|    ¸Ş¼Òµå    |                        ¼³¸í
+ * 		 ë¦¬í„´íƒ€ì…	|    ë©”ì†Œë“œ    |                        ì„¤ëª…
  * 		_________________________________________________________________________
- * 		boolean | hashNext() | °¡Á®¿Ã °´Ã¼°¡ ÀÖÀ¸¸é true¸¦ ¸®ÅÏÇÏ°í ¾øÀ¸¸é false¸¦ ¸®ÅÏÇÕ´Ï´Ù.
+ * 		boolean | hashNext() | ê°€ì ¸ì˜¬ ê°ì²´ê°€ ìˆìœ¼ë©´ trueë¥¼ ë¦¬í„´í•˜ê³  ì—†ìœ¼ë©´ falseë¥¼ ë¦¬í„´í•©ë‹ˆë‹¤.
  * 		_________________________________________________________________________
- * 		   E    |  next()    | ÄÃ·º¼Ç¿¡¼­ ÇÏ³ªÀÇ °´Ã¼¸¦ °¡Á®¿É´Ï´Ù.
+ * 		   E    |  next()    | ì»¬ë ‰ì…˜ì—ì„œ í•˜ë‚˜ì˜ ê°ì²´ë¥¼ ê°€ì ¸ì˜µë‹ˆë‹¤.
  * 		_________________________________________________________________________
- * 		  void  |  remove()  | Set ÄÃ·º¼Ç¿¡¼­ °´Ã¼¸¦ Á¦°ÅÇÕ´Ï´Ù.
+ * 		  void  |  remove()  | Set ì»¬ë ‰ì…˜ì—ì„œ ê°ì²´ë¥¼ ì œê±°í•©ë‹ˆë‹¤.
  * 		_________________________________________________________________________
  *
  *
@@ -52,32 +52,32 @@ public class HashSetExam1 {
 		}
 		
 		int size = set.size();
-		System.out.println("ÃÑ °´Ã¼¼ö: " + size);
+		System.out.println("ì´ ê°ì²´ìˆ˜: " + size);
 		System.out.println("set : " + set);
-		System.out.println("TypeÈ®ÀÎ :" + set.getClass().getName());
+		System.out.println("Typeí™•ì¸ :" + set.getClass().getName());
 		
 		//Iterator
 		Iterator<String> iterator = set.iterator();
-		System.out.println("iterator È®ÀÎ: " + iterator);
-		System.out.println("iterator.hasNext() È®ÀÎ :" + iterator.hasNext());
-		System.out.println("iterator.next() È®ÀÎ :" + iterator.next());
+		System.out.println("iterator í™•ì¸: " + iterator);
+		System.out.println("iterator.hasNext() í™•ì¸ :" + iterator.hasNext());
+		System.out.println("iterator.next() í™•ì¸ :" + iterator.next());
 		
-		//Iterator - °´Ã¼ ÇÏ³ª¾¿ °¡Á®¿À±â
+		//Iterator - ê°ì²´ í•˜ë‚˜ì”© ê°€ì ¸ì˜¤ê¸°
 		while(iterator.hasNext()) {
 			String element = iterator.next();
 			System.out.println("\t" + element);
 		}
 		
-		//Iterator - °´Ã¼»èÁ¦
+		//Iterator - ê°ì²´ì‚­ì œ
 		set.remove("iBATIS");
-		System.out.println("ÃÑ °´Ã¼¼ö: " + set.size());
+		System.out.println("ì´ ê°ì²´ìˆ˜: " + set.size());
 		
-		//Iterator - ÀüÃ¼Á¦°Å
+		//Iterator - ì „ì²´ì œê±°
 		set.clear();		
-		if(set.isEmpty()) { System.out.println("ºñ¾î ÀÖÀ½"); }
+		if(set.isEmpty()) { System.out.println("ë¹„ì–´ ìˆìŒ"); }
 		
 		//Array
-		String[] names = {"°ûÀ±Áø","±ÕÁø","Âî´Ï","Áö´Ï","ÃëÁ÷Àß ÇÒ ¼ö ÀÖÀ»±î?"};
+		String[] names = {"ê³½ìœ¤ì§„","ê· ì§„","ì°Œë‹ˆ","ì§€ë‹ˆ","ì·¨ì§ì˜ í•  ìˆ˜ ìˆì„ê¹Œ?"};
 		System.out.println("array test : " + names);
 		System.out.println("array test : " + names.length);
 		

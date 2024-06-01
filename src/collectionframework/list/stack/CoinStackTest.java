@@ -4,9 +4,9 @@ import java.util.Stack;
 
 /*
  * FILO, LIFO
- * push() : аж╬НаЬ ╟╢ц╪╦╕ ╫╨ец©║ Ёж╫ю╢о╢ы.
- * peer() : ╫╨ецюг ╦г ю╖ ╟╢ц╪╦╕ ╟║а╝©и╢о╢ы. ╟╢ц╪╦╕ ╫╨ец©║╪╜ а╕╟егоаЖ ╬й╫ю╢о╢ы.
- * pop()  : ╫╨ецюг ╦г ю╖ ╟╢ц╪╦╕ ╟║а╝©и╢о╢ы. ╟╢ц╪╦╕ ╫╨ец©║╪╜ а╕╟егу╢о╢ы.
+ * push() : Лё╪Л√╢Л╖└ Й╟²Л╡╢К╔╪ Л┼╓М┐²Л≈░ К└ёЛ┼╣К▀┬К▀╓.
+ * peer() : Л┼╓М┐²Л²≤ К╖╗ Л°└ Й╟²Л╡╢К╔╪ Й╟─Л═╦Л≤╣К▀┬К▀╓. Й╟²Л╡╢К╔╪ Л┼╓М┐²Л≈░Л└° Л═°Й╠╟М∙≤Л╖─ Л∙┼Л┼╣К▀┬К▀╓.
+ * pop()  : Л┼╓М┐²Л²≤ К╖╗ Л°└ Й╟²Л╡╢К╔╪ Й╟─Л═╦Л≤╣К▀┬К▀╓. Й╟²Л╡╢К╔╪ Л┼╓М┐²Л≈░Л└° Л═°Й╠╟М∙╘К▀┬К▀╓.
  * */
 public class CoinStackTest {
 	public static void main(String[] args) {
@@ -23,7 +23,7 @@ public class CoinStackTest {
 		
 		while(!coinbox.isEmpty()) {
 			Coin coin = coinbox.pop();
-			System.out.println("╡╗Ё╩©б ╣©юЭ : " + coin.getValue() + "©Ь");
+			System.out.println("Й╨╪К┌╢Л≤╗ К▐≥Л═└ : " + coin.getValue() + "Л⌡░");
 		}
 		
 		System.out.println(coinbox.empty()); //size() == 0;
