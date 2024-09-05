@@ -21,6 +21,12 @@ public class StackExam {
         st.push("1");
         st.push('2');
         System.out.println("Stack = " + st);
+        System.out.println("st.pop() = " + st.pop());
+        System.out.println("st.pop() = " + st.pop());
+        System.out.println("st.pop() = " + st.pop());
+        System.out.println("st.pop() = " + st.pop());
+        System.out.println("st.pop() = " + st.pop()); // throws exception
+        System.out.println("st.peek() = " + st.peek()); // throws exception
 
         while (!st.empty()) {
             System.out.println("st.pop() = " + st.pop());
