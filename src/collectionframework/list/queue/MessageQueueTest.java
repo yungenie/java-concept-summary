@@ -1,13 +1,21 @@
 package collectionframework.list.queue;
 
+import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.LinkedList;
 
 public class MessageQueueTest {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Queue<Message> messageQueue = new LinkedList<>();
-		
+
+		/**
+		 *  Throws Exception  | Return Special Value
+		 *  add(ele) | offer(ele)
+		 *  remove() | poll()
+		 *  element() | peek()
+		 */
+
+
 		messageQueue.offer(new Message("sendMail","홍길동"));
 		messageQueue.offer(new Message("sendSMS","윤진"));
 		messageQueue.offer(new Message("sendKakaotalk","영근"));

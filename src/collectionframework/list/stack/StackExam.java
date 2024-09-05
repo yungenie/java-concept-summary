@@ -25,7 +25,7 @@ public class StackExam {
         System.out.println("st.pop() = " + st.pop());
         System.out.println("st.pop() = " + st.pop());
         System.out.println("st.pop() = " + st.pop());
-        System.out.println("st.pop() = " + st.pop()); // throws exception
+        //System.out.println("st.pop() = " + st.pop()); // throws exception
         System.out.println("st.peek() = " + st.peek()); // throws exception
 
         while (!st.empty()) {
